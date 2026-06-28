@@ -11,6 +11,21 @@ Mostra:
 - rate limits osservati
 - contatori attivita, tool call e metadati runtime
 
+## Installazione
+
+```bash
+make install
+```
+
+Installa il binario `codex-usage` in `$GOBIN` (o `$GOPATH/bin`, di solito `~/go/bin`).
+Se quella cartella non e' nel PATH, aggiungila:
+
+```bash
+echo 'export PATH="$PATH:$(go env GOPATH)/bin"' >> ~/.bashrc && source ~/.bashrc
+```
+
+Altri target: `make build` (in `./bin`), `make test`, `make reconcile`, `make uninstall`, `make clean`.
+
 ## Uso
 
 ```bash
